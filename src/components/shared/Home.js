@@ -2,10 +2,10 @@ import React from 'react'
 import { Parallax, ParallaxLayer  } from '@react-spring/parallax'
 
 //*Images
-import stars from '../images/stars.png'
-import earth from '../images/earth.png'
-import mars from '../images/mars.png'
-import rocket from '../images/rocket.png'
+import stars from '../../images/stars.png'
+import earth from '../../images/earth.png'
+import mars from '../../images/mars.png'
+import rocket from '../../images/rocket.png'
 
 
 function Home(){
