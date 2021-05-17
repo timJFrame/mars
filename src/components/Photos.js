@@ -1,6 +1,8 @@
 import React from 'react'
 import {getLatestPhotos} from '../lib/api'
 import PhotoCard from './PhotoCard'
+import Loader from 'react-loader-spinner'
+
 
 function Photos(){
     const [photos, setPhotos] = React.useState()
@@ -17,11 +19,6 @@ function Photos(){
         getData()
     }, [])
 
-
-
-
-   console.log(photos)
-
     return(
         <>
         <main className="page-container">
@@ -35,7 +32,12 @@ function Photos(){
                     <PhotoCard key={photo.id} {...photo}/>
                 ))
                 :
-                <p>Loading</p>
+                <div className="loader-container">
+                <Loader 
+                type="Oval"
+                color="white"
+                />
+                </div>
                }
             </article>
         </main>
